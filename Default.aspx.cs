@@ -5,6 +5,8 @@
  * 
  * Install NewtonSoft.json using nuGet
  * 
+ * This is also helpful: https://www.youtube.com/watch?v=j28OXdlJ2EI
+ * 
  * *******************************************************/
 using System;
 using System.Collections.Generic;
@@ -17,6 +19,14 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!IsPostBack) {
+            txtJson.Text = "{\"lastName\":\"Nicholson\"}";
+        }
+    }
+
+    protected void btnConvert_Click(object sender, EventArgs e) {
+        Person p = new Person("","", 0,null,"");
+        Newtonsoft.Json.JsonConvert.PopulateObject(txtJson.Text, p);
 
     }
 }

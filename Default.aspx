@@ -9,7 +9,14 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        <asp:TextBox ID="txtJson" runat="server"></asp:TextBox>
+        <br />
+        <asp:TextBox ID="txtHeight" runat="server"></asp:TextBox>
+        <br />
+        <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+        <br />
+        <asp:Button ID="btnConvert" runat="server" Text="Convert" OnClick="btnConvert_Click" />
+        <br />
     </div>
     </form>
 </body>
