@@ -13,7 +13,9 @@
         <br />
         <asp:TextBox ID="txtHeight" runat="server"></asp:TextBox>
         <br />
-        <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
+        <br />
+        <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="btnConvert" runat="server" Text="Convert" OnClick="btnConvert_Click" />
         <br />

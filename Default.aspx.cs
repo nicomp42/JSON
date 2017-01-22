@@ -28,5 +28,6 @@ public partial class _Default : System.Web.UI.Page
         Person p = new Person("","", 0,null,"");
         Newtonsoft.Json.JsonConvert.PopulateObject(txtJson.Text, p);
 
+        txtLastName.text = p.lastName;
     }
 }
