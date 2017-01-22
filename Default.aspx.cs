@@ -1,7 +1,9 @@
 ﻿/*********************************************************
+ * Repo at https://github.com/nicomp42/JSON
+ * 
  * C:\Users\nicomp\Google Drive\IT 3047-001 Web Server App Dev\JSON\JSON
  * Clicking "Publish: in VS will create a repo in the folder where the project is. Awesome. 
- * Be sure the .sln file is in the same folder as the project before clicking "publish" in VS.
+ * Be sure the .sln file is in the same folder as the project before clicking "publish" in VS: do a "File/Save As" on the .sln file
  * 
  * Install NewtonSoft.json using nuGet
  * 
@@ -20,7 +22,7 @@ public partial class _Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack) {
-            txtJson.Text = "{\"lastName\":\"Nicholson\"}";
+            txtJson.Text = "{\"lastName\":\"Nicholson\",\"Friends\":[\"Brenda\",\"Hannah\",\"Barry\"]}";
         }
     }
 
@@ -31,5 +33,9 @@ public partial class _Default : System.Web.UI.Page
         Newtonsoft.Json.JsonConvert.PopulateObject(txtJson.Text, p);
 
         txtLastName.Text = p.lastName;
+
+        string friendsCSV = string.Join(",", p.friends.ToArray());
+
+        txtFriends.Text = friendsCSV;
     }
 }

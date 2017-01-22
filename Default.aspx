@@ -9,13 +9,15 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:TextBox ID="txtJson" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtJson" runat="server" Width="791px"></asp:TextBox>
         <br />
         <asp:TextBox ID="txtHeight" runat="server"></asp:TextBox>
         <br />
         <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
         <br />
         <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
+        <br />
+        <asp:TextBox ID="txtFriends" runat="server" Width="787px"></asp:TextBox>
         <br />
         <asp:Button ID="btnConvert" runat="server" Text="Convert" OnClick="btnConvert_Click" />
         <br />
