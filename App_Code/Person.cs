@@ -10,14 +10,14 @@ public class Person {
     private String mFirstName, mLastName;
     private int mHeight;
     private List<String> mFriends;
-    private String email;
+    private String mEmail;
 
     public Person(String firstName, String lastName, int height, List<String> friends, String eMail) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.height = height;
         this.friends = friends;
-        this.email = eMail;
+        this.eMail = eMail;
     }
     public List<String> friends {
         get {return mFriends;}

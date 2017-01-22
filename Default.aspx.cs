@@ -26,8 +26,10 @@ public partial class _Default : System.Web.UI.Page
 
     protected void btnConvert_Click(object sender, EventArgs e) {
         Person p = new Person("","", 0,null,"");
+
+        // Decode from Json string to a C# object
         Newtonsoft.Json.JsonConvert.PopulateObject(txtJson.Text, p);
 
-        txtLastName.text = p.lastName;
+        txtLastName.Text = p.lastName;
     }
 }
