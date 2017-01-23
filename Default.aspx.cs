@@ -22,6 +22,7 @@ public partial class _Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack) {
+            // This really fun because of the quoted string inside a C# String
             txtJson.Text = "{\"lastName\":\"Nicholson\",\"Friends\":[\"Brenda\",\"Hannah\",\"Barry\"]}";
         }
     }
