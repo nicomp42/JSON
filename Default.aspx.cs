@@ -5,7 +5,7 @@
  * Clicking "Publish: in VS will create a repo in the folder where the project is. Awesome. 
  * Be sure the .sln file is in the same folder as the project before clicking "publish" in VS: do a "File/Save As" on the .sln file
  * 
- * Install NewtonSoft.json using nuGet
+ * Install NewtonSoft.json into the VS Project using nuGet. It's easy and fun. 
  * 
  * This is also helpful: https://www.youtube.com/watch?v=j28OXdlJ2EI
  * 
